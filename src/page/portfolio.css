@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: -40px;
+  border: 2px solid red;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  font-size: 16px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.title,
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 35px;
+  margin-bottom: -7px;
+}
+
+.text {
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
